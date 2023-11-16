@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
   res.send('Hello Docker! 🐳')
 })
 
+app.get('/test', (req, res) => {
+  res.send('The test is working!')
+})
+
 app.listen(PORT, () => {
   console.log(`Listening on http://localhost:${PORT}...`)
 })
